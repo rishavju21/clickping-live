@@ -18,11 +18,11 @@ export function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
 
   // Mock CTAs discovered on the website
   const mockCtas = [
-    { id: "1", name: "Add to Cart", selector: "button.add-to-cart" },
-    { id: "2", name: "Checkout", selector: "button.checkout-btn" },
-    { id: "3", name: "Sign Up", selector: "a.signup-link" },
-    { id: "4", name: "Subscribe Newsletter", selector: "form.newsletter button" },
-    { id: "5", name: "Contact Us", selector: "a.contact-btn" },
+    { id: "1", name: "Add to Cart", selector: "button.add-to-cart", url: "/product/shoes-123" },
+    { id: "2", name: "Checkout", selector: "button.checkout-btn", url: "/cart" },
+    { id: "3", name: "Sign Up", selector: "a.signup-link", url: "/signup" },
+    { id: "4", name: "Subscribe Newsletter", selector: "form.newsletter button", url: "/newsletter" },
+    { id: "5", name: "Contact Us", selector: "a.contact-btn", url: "/contact" },
   ];
 
   const handleCtaToggle = (ctaId: string) => {
@@ -213,6 +213,9 @@ export function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
                           >
                             {cta.name}
                           </label>
+                          <p className="text-xs text-gray-500 mt-1">
+                            {websiteUrl || 'https://mystore.com'}{cta.url}
+                          </p>
                           <p className="text-xs text-gray-600 font-mono mt-1">{cta.selector}</p>
                         </div>
                       </div>
