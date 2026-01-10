@@ -1,7 +1,7 @@
 
-  # SaaS Web Application Design
+  # ClickPing
 
-  This is a code bundle for SaaS Web Application Design. The original project is available at https://www.figma.com/design/JEXMNMwGKzGKsbRszPeCes/SaaS-Web-Application-Design.
+  This is a code bundle for ClickPing. The original project is available at https://www.figma.com/design/JEXMNMwGKzGKsbRszPeCes/ClickPing.
 
   ## Running the code
 
